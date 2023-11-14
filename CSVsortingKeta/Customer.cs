@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSVsortingKeta
 {
-    internal class Customer
+     class Customer
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

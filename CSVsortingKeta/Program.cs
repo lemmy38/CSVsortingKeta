@@ -25,13 +25,14 @@ namespace CSVsortingKeta
                 List<Customer> customers = new List<Customer>();
 
                 lines = File.ReadAllLines(filePath).ToList();
-                /*user input to choose filtered field option 1. Firstname 2.Lastname 3.Date of Birthday
-                once the user choose an option the only the select deta show be printed to console */
+                /*user input to select and filter fields option 1. Firstname 2.Lastname 3.Date of Birthday
+                once the user chooses an option only the select data should be printed to console */
                 {
                     Console.WriteLine("Select sorting option (1: First Name, 2: LastName, 3: Date of Birth):");
 
                     Console.ReadLine();
 
+                    //read the string, datetime format yyyy-dd-MM
                     if (int.TryParse(Console.ReadLine(), out int sortingOption) && sortingOption >= 0 && sortingOption <= 2)
                     {
                         //                  List<Customer> customers = ReadCustomersFromCsv(filePath);

@@ -30,8 +30,8 @@ namespace CSVsortingKeta
                 {
                     Console.WriteLine("Select sorting option (1: First Name, 2: LastName, 3: Date of Birth):");
 
-                    Console.ReadLine();
-
+                   
+                    
                     //read the string, datetime format yyyy-dd-MM
                     if (int.TryParse(Console.ReadLine(), out int sortingOption) && sortingOption >= 0 && sortingOption <= 2)
                     {
